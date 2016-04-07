@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context=".MainActivity"
+    android:id="@+id/R">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:adjustViewBounds="false"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_land"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Username"
+        android:id="@+id/textView"
+        android:textIsSelectable="false"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:textColor="#fdff1f" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Enter Username"
+        android:gravity="center_vertical|center"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="#40fffb"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#fdff1f" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dif4"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:text="4"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/dif5"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/dif6"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/dif7"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/dif8"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:id="@+id/save"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="48dp" />
+</RelativeLayout>

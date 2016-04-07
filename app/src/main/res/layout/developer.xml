@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:adjustViewBounds="false"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_land"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/harshit"
+        android:layout_marginTop="-20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Harshit Shah"
+        android:id="@+id/textView11"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:textSize="30dp"
+        android:textColor="#fdff1f"
+        android:gravity="center"
+        android:layout_marginTop="-30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="me"
+        android:id="@+id/me"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+</RelativeLayout>

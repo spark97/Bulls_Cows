@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/R"
+    android:layout_marginBottom="-10dp"
+   >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:adjustViewBounds="false"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_land"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guess"
+        android:hint="Enter Guess"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#40fffb"
+        android:textColorHint="#40fffb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Your Guess"
+        android:id="@+id/check"
+        android:layout_marginRight="56dp"
+        android:layout_below="@+id/guess"
+        android:layout_alignRight="@+id/guess"
+        android:layout_alignEnd="@+id/guess"
+        android:layout_marginEnd="56dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start New Game"
+        android:id="@+id/newgame"
+        android:layout_alignTop="@+id/check"
+        android:layout_alignRight="@+id/lv"
+        android:layout_alignEnd="@+id/lv"
+        android:layout_marginRight="25dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/lv"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newgame"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dd"
+        android:id="@+id/steps"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/check"
+        android:layout_alignStart="@+id/check"
+        android:gravity="left|center_vertical"
+        android:textAlignment="gravity"
+        android:textColor="#fdff1f"
+        android:layout_marginLeft="-15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/difficulty"
+        android:gravity="center_vertical|right"
+        android:textAlignment="gravity"
+        android:layout_alignTop="@+id/steps"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fdff1f" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/hs"
+        android:layout_alignRight="@+id/lv"
+        android:layout_alignEnd="@+id/lv"
+        android:layout_alignTop="@+id/difficulty"
+        android:textColor="#fdff1f"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>
